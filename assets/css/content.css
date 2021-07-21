@@ -1,0 +1,256 @@
+.container-content{
+    display: flex;
+    width: 100%;
+    height: 83vh;
+}
+
+/* ASIDE */
+aside{
+    flex-basis: 10%;
+    padding: 20px;
+    background-color: black;
+}
+
+aside nav ul li{
+    margin-bottom: 30px;
+}
+
+aside nav ul li a{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+
+/* main */
+main{
+    flex-basis: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main.content{
+    background-image: url("../images/full-bloom.png");
+}
+
+/* main-home */
+main#home{
+    background-image: url("../images/background-hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+main#home h2{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 60vh;
+    margin-left: 40px;
+}
+
+/* main-addbook */
+main#addbook h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+main#addbook .container-form{
+    background-color: indigo;
+    width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main#addbook .container-form input[type="text"],
+main#addbook .container-form input[type="number"]{
+    width: 95%;
+    height: 10px;
+    padding: 9px;
+    margin-bottom: 20px;
+}
+
+main#addbook label{
+    color: white;
+    font-weight: bold;
+}
+
+main#addbook .container-form button{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 27%;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(183, 0, 255), rgb(198, 117, 230));
+    border-radius: 20px;
+}
+
+
+/* main-books */
+main.books{
+    overflow: auto;
+    height: 533px;
+}
+
+main.books h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+main.books form{
+    margin-left: 30%;
+}
+
+main.books form input{
+    width: 350px;
+    height: 12px;
+    padding: 9px;
+}
+
+main.books form button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: indigo;
+    color: white;
+}
+
+/* book info */
+.item{
+    width: 700px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shadow{
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.36);
+}
+
+.item .innerBtn .moveBtn{
+    background-color: rgb(69, 214, 69);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.item .innerBtn .deleteBtn{
+    background-color: rgb(238, 60, 60);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#searchUnread, #searchAlreadyRead{
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#searchUnread > p, #searchAlreadyRead > p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#searchUnread .close, #searchAlreadyRead .close{
+    margin-left: 85%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(226, 53, 53);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+}
+
+/* style costom alert */
+.containerAlert{
+    position: fixed;
+    top: 24%;
+    left: 44%;
+    width: 350px;
+    min-height: 260px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px 12px rgba(0,0,0,0.73);
+    display: flex;
+    flex-direction: column;
+}
+
+.headerAlert{
+    width: 100%;
+    flex-basis: 30%;
+    background-image: linear-gradient(
+        to right,
+        rgb(76, 0, 131),
+        rgb(173, 115, 214)
+    );
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.headerAlert h2{
+    text-align: center;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.mainAlert{
+    width: 100%;
+    flex-basis: 40%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.mainAlert p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footerAlert{
+    border-top: 2px solid indigo;
+    padding-top: 10px;
+    flex-basis: 30%;
+}
+
+.footerAlert button{
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(
+        to right,
+        rgb(76, 0, 131),
+        rgb(173, 115, 214)
+    );
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+

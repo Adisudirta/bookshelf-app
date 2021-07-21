@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+     <!-- costom alert -->
+     <div class="containerAlert" style="visibility: hidden;">
+        <div class="headerAlert">
+            <h2>Alert!</h2>
+        </div>
+        <div class="mainAlert">
+            <p></p>
+        </div>
+        <div class="footerAlert">
+            <button onclick="closeAlert()">Close</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+    <div class="container-content">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./addBook.html">Add Book</a></li>
+                    <li><a href="./alreadyRead.html">Already Read</a></li>
+                    <li><a href="./unread.html">Unread</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="addbook" class="content">
+            <h2>Add Your Book Here!</h2>
+            <div class="container-form">
+                <form id="bookForm">
+                    <input type="text" id="title" placeholder="Book title" name="bookTitle" required><br>
+                    <input type="text" id="author" placeholder="Author name" name="authorName" required><br>
+                    <input type="number" id="year" placeholder="Year" name="year" required><br>
+                    <input type="checkbox" id="isAlreadyRead" onclick="alreadyRead()" name="isAlreadyRead"><label for="isAlreadyRead">Already read</label><br><br><br>
+                    <button>Add Book</button>
+                </div>
+                </form>
+        </main>
+    </div>
+   
+    <footer>I Wayan Adi Sudirtayasa &copy 2021</footer>
+
+    <script src="./assets/script/costomAlert.js"></script>
+    <script src="./assets/script/book_manipulation.js"></script>
+    <script src="./assets/script/addbook_script.js"></script>
+</body>
+</html>

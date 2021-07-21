@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: aqua;
+    height: 10vh;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(183, 0, 255), rgb(198, 117, 230));
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
